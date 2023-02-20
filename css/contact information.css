@@ -1,0 +1,218 @@
+/* index.css是用来美化首页的 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-color: #f3f5f7; */
+    background-color: #f1f1f1;
+
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+/* 头部 */
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.head_img {
+    height: 94px;
+    width: 300px;
+}
+
+/* 导航栏 */
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 70px; */
+    height: 100px;
+
+}
+
+.nav .ul1 {
+    margin-right: 20px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.nav .li1 {
+    /* margin-right: 39px; */
+    text-align: center;
+    /* padding: 0 20px; */
+    /* margin-right: 10px; */
+    width: 150px;
+
+}
+
+.nav .li1 .a1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav .li1 a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 412px; */
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+.search input {
+    padding-left: 20px;
+    width: 260px;
+    height: 38px;
+    border: 0;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    width: 50px;
+    height: 40px;
+    background-image: url(../image/search.jpg);
+    border: 0;
+}
+ /* 背景图 */
+
+ .bgc{
+    display: flex;
+     flex-direction: row;
+     justify-content:center;
+    width: 100%;
+    height: 150px;
+    background-image: url(../image/简介背景.jpg);  
+ }
+ .bgc_div p{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+ }
+ .bgc_div span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+ }
+ /* 简介  */
+.brief h3{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color:#666 ;
+}
+.brief_box{
+    padding-top: 30px;
+    width: 260px;
+    border-bottom: 1px solid #000;
+}
+.brief li{
+    padding-top: 15px;
+    font-size: 16   px;
+    font-weight: 400;
+    color: #666;
+}
+/* 底部 */
+.tail{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 35px;
+    margin-top: 15px;
+    width: 100%;
+    height: 405px;
+    background-color: #000; 
+}
+.tail_left h1{
+    padding-bottom: 50px;
+    color: #fff;
+}
+.tail_left span{
+    line-height: 24px;
+
+    color: #fff;
+
+}
+.tail_right h1{
+    padding-bottom: 50px;
+    color: #fff;
+
+}
+.tail_right li{
+    line-height: 35px;
+    color: #fff;
+
+}
+/* 下拉菜单 */
+.li12 .a2:hover {
+    color: #00a4ff;
+}
+
+.ul2 {
+    position: relative;
+    padding-top: 20px;
+    display: none;
+}
+
+.ul2 li {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: #000 solid 1px;
+}
+
+.ul2 li a {
+    line-height: 24px;
+    color: #000;
+    font-size: 20px;
+}
+
+.li12:hover .ul2 {
+    display: block;
+}
+
+.ul2 li:hover {
+    background-color: #00a4ff;
+}
+
+.ul2 a:hover {
+    color: #fff;
+}
